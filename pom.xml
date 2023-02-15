@@ -30,6 +30,18 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+			<cloudHubDeployment>
+				<uri>https://anypoint.mulesoft.com</uri>
+				<muleVersion>{mule.version}</muleVersion>
+				<username>${username}</username>
+				<password>{password}</password>
+				<environment>${environment}</environment>
+				<applicationName>${application.name}</applicationName> 
+				<businessGroup>${business}</businessGroup>
+				<workers>${workers}</workers>
+				<workerType>${worker.type}</workerType>
+				<objectStoreV2>true</objectStoreV2>
+			</cloudHubDeployment>
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>mysql</groupId>
